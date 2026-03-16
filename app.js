@@ -35,7 +35,7 @@ function newDiv() {
 	}
 	const $newDiv = document.createElement("div");
 	$newDiv.classList.add("moodelement");
-	if (mood == "Verry Happy") {
+	if (mood == "Very Happy") {
 		$newDiv.classList.add("verryH");
 		$svg.setAttribute("src", "assets/verryhappy.svg");
 	}
@@ -51,7 +51,7 @@ function newDiv() {
 		$newDiv.classList.add("sad");
 		$svg.setAttribute("src", "assets/sad.svg");
 	}
-	if (mood == "Verry Sad") {
+	if (mood == "Very Sad") {
 		$newDiv.classList.add("verryS");
 		$svg.setAttribute("src", "assets/verrysad.svg");
 	}
