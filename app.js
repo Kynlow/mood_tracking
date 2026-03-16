@@ -61,8 +61,10 @@ function newDiv() {
 }
 
 for (let i = 0; i < $inputs.length; i++) {
-    $inputs[i].addEventListener("change", () => {
-        $inputsDiv[0, 1, 2, 3, 4].classList.remove("border")
-        $inputsDiv[i].classList.add("border")
-    })
+	$inputs[i].addEventListener("change", () => {
+		for (let j = 0; j < $inputsDiv.length; j++) {
+			$inputsDiv[j].classList.remove("border");
+		}
+		$inputsDiv[i].classList.add("border");
+	});
 }
